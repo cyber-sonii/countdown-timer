@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background: #4D0033;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 50px;
+    background-color: #000000;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.countdown {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    background-image: url("./image/wallpaper3.jpg");
+    background-position: center;
+    display: flex;
+    width: 50vw;
+    height: 67vh;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 2%;
+    animation-name: flash;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: #000000;
+}
+
+    @keyframes flash {
+        0% {background-color: #000033;}
+        25% {background-color: #330066;}
+        50% {background-color: #001166; }
+        100% {background-color: #9500B3;}
+    }
+
+
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 39px;
+}
+
+.waiting {
+    height: 50px;
+}
