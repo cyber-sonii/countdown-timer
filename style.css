@@ -6,61 +6,44 @@
 
 body {
     font-family: "Courier New", monospace;
-    background: #4D0033;
+    /* background: #4D0033; */
+    /* background-image: url("./image/img1.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
 }
 
 h1 {
-    font-size: 50px;
-    font-weight: bold;
-    padding: 50px;
-    background-color: #000000;
-    color: #FFFFFF;
-    align-items: center;
+    font-size: 70px;
+    color: #000000;
 }
 
 .countdown {
-    min-height: 100px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.image {
-    background-image: url("./image/wallpaper2.jpg");
-    background-position: center;
-    display: flex;
-    width: 50vw;
-    height: 67vh;
+    background-image: url("./image/img1.jpg");
+    background-size: 100%;
+    background-repeat: space;
 }
 
 .timer {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 2%;
-    animation-name: flash;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    background-color: #000000;
+    margin-bottom: 40%;
 }
-
-    @keyframes flash {
-        0% {background-color: #000033;}
-        25% {background-color: #330066;}
-        50% {background-color: #001166; }
-        100% {background-color: #9500B3;}
-    }
 
 
 .day,
 .hour,
 .minute,
 .second {
-    font-size: 39px;
+  font-size: 3rem;
 }
 
 .waiting {
-    height: 50px;
+  height: 50vh;
 }
