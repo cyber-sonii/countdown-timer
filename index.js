@@ -1,9 +1,14 @@
 ﻿const timer = () => {
     // Specify the date and time we are counting down to.
 
-    const countDate = new Date("Jul 30, 2023 00:00:00").getTime();
+    const countDate = new Date("Sep 16, 2024 08:49:00").getTime();
     const now = new Date().getTime();
     const remainingTime = countDate - now;
+
+    if (remainingTime <= 0 ){
+        document.querySelector(".countdown").innerHTML = "<h1> Time Up! Congratulations</h1>";
+        return;
+    } 
 
     const second = 1000;
     const minute = second * 60;

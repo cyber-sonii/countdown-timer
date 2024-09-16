@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+          background-size: 100%;
+        }
+    </style>   
+    <h1>Registration form</h1>
+    Surname: <input type="text" placeholder="Doe">  <br><br>
+    Frist name: <input type="text" placeholder="Tom"><br><br>
+    Middle name: <input type="text" placeholder=" Ezee"><br><br>
+    Age: <input type="number" value="12" min="10" max="50"><br><br>
+    <label for="datemin">D.O.B: </label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    D.O.B: <input type="date" min="2005-11-31"> <br><br>
+    Favourite color: <input type="color"><br><br>
+    Gender: <input type="radio" name="Gender"> Male <input type="radio" name="Gender"> Female <input type="radio" name="Gender"> Other<br><br>
+    Hobbies: <input type="checkbox" name="hobby"> Skipping <input type="checkbox" name="hobby"> coding <input type="checkbox" name="hobby"> sleeping <input type="checkbox" name="hobby"> Other<br><br>
+    Ethnicity: <select name="Ethnicity"> 
+        <option name="Ethnicity" value="select">select </option>
+        <option name="Ethnicity" value="Black">Black </option>
+        <option name="Ethnicity" value="White">White </option>
+        <option name="Ethnicity" value="Asian">Asian</option>
+        <option name="Ethnicity" value="Carribean">Carribean </option>
+        <option name="Ethnicity" value="Latino">Latino</option>
+        <option name="Ethnicity" value="caucasaian">caucasaian</option>
+    </select><br><br>
+    Phone Number: <input type="tel" maxlength="4" size="4" pattern="[+0-9]{1,4}" placeholder="+234"> <input type="tel"><br><br>
+    Friends rating you would like to meet: <input type="range" min="1" max="5" style="color: #e32bac;"><br><br>
+    <input type="submit" value="submit" style="color: #e32bac;"> 
+ </form>
+    
+</body>
+</html>
