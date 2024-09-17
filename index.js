@@ -1,7 +1,11 @@
-﻿const timer = () => {
+﻿const countdownDateinput = document.getElementById("countdown-date");
+const countdownTimeinput = document.getElementById("countdown-time");
+const countdownDisplay = document.querySelector(".countdown");
+
+const timer = () => {
     // Specify the date and time we are counting down to.
 
-    const countDate = new Date("Sep 16, 2024 08:49:00").getTime();
+    const countDate = new Date(countdownDateinput.value).getTime();
     const now = new Date().getTime();
     const remainingTime = countDate - now;
 

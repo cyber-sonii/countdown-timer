@@ -18,6 +18,16 @@ h1 {
     color: #000000;
 }
 
+.datetime-picker{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 65px;
+    margin-top: 10px;
+    opacity: 55%;
+    transform: scale(1.5);
+}
+
 .countdown {
     min-height: 100vh;
     display: flex;
