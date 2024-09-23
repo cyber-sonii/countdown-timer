@@ -39,6 +39,7 @@ h1 {
     background-repeat: space;
 }
 
+
 .timer {
     display: flex;
     justify-content: space-around;
@@ -46,6 +47,29 @@ h1 {
     margin-bottom: 40%;
 }
 
+#congrats-message {
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+}
+  
+#congrats-message.animate {
+    opacity: 1;
+    animation: scale-up 10s;
+}
+  
+@keyframes scale-up {
+    0% {
+    transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.countdown.hidden {
+    display: none;
+  }
 
 .day,
 .hour,

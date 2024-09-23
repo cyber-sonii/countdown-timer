@@ -9,9 +9,14 @@ const timer = () => {
     const now = new Date().getTime();
     const remainingTime = countDate - now;
 
+    
+    const congratsMessage = document.getElementById("congrats-message");
+    congratsMessage.innerText = "";
+    congratsMessage.classList.remove("animate");
+        
     if (remainingTime <= 0 ){
-        document.querySelector(".countdown").innerHTML = "<h1> Time Up! Congratulations</h1>";
-        return;
+        congratsMessage.innerText = "Time Up! Congratulations";
+        congratsMessage.classList.add("animate");
     } 
 
     const second = 1000;
